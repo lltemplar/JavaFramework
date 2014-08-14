@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="po.UserMapper"> 
+<!-- 这里namespace必须是UserMapper接口的路径，不然要运行的时候要报错 “is not known to the MapperRegistry” --> 
+    <insert id="insertUser" parameterType="User"> 
+       insert into vincent_user(name,age) values(#{name},#{age}) 
+       <!-- 这里sql结尾不能加分号，否则报“ORA-00911”的错误  --> 
+    </insert> 
+ 
+    <!-- 这里的id必须和UserMapper接口中的接口方法名相同，不然运行的时候也要报错 --> 
+    <select id="getUser" resultType="User" parameterType="java.lang.String"> 
+        select * from vincent_user where name=#{name} 
+    </select> 
+</mapper> 
