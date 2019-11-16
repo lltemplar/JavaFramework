@@ -77,12 +77,12 @@
             <version>2.9.2</version>
         </dependency>
         <!-- swagger end -->
-        <!-- velocity start -->
+        <!-- freemarker 模板依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-velocity</artifactId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-        <!-- velocity end -->
+        <!-- freemarker end -->
     </dependencies>
 
     <build>
