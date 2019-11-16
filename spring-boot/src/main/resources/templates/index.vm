@@ -1,0 +1,12 @@
+<html>
+<body>
+亲爱的${toUserName}，你好！
+
+    ${message}
+
+祝：开心！
+    ${fromUserName}55
+    ${time}
+
+</body>
+</html>
